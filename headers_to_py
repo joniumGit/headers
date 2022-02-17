@@ -1,0 +1,7 @@
+#!/bin/bash
+# For creating standard headers file from IANA site
+# https://www.iana.org/assignments/http-fields/http-fields.xhtml
+paste -d '=' \
+<(cat ./standard-headers.csv | tail -n +2 | sed 's/^\([^,]*\),.*$/\1/g' | uniq | tr '[:lower:]' '[:upper:]' | tr '-' '_') \
+<(cat ./standard-headers.csv | tail -n +2 | sed 's/^\([^,]*\),.*$/"\1"/g' | uniq ) \
+| sed -e 's/=/ = /g' -e 's/* =/STAR =/g' > ./src/headers/__init__.py
