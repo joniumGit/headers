@@ -6,7 +6,7 @@ here = pathlib.Path(__file__).parent.resolve()
 long_description = (here / 'README.md').read_text(encoding='utf-8')
 
 setup(
-    name='headers',
+    name='httpheaders',
     version='1.0.0',
     description='HTTP Header Service',
     long_description=long_description,
