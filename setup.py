@@ -13,7 +13,7 @@ with open(here / 'src' / 'headers' / '__init__.py', 'r') as f:
 setup(
     name='httpheaders',
     version=version,
-    description='HTTP Header Service',
+    description='HTTP Headers',
     long_description=long_description,
     long_description_content_type='text/markdown',
     url='https://github.com/joniumGit/headers',
