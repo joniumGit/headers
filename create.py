@@ -8,6 +8,8 @@ if __name__ == '__main__':
     import pathlib
     import urllib.request as requests
 
+    created_at = datetime.date.today()
+
     with requests.urlopen(IANA_HEADERS_CSV) as url_connection:
         response = url_connection.read().decode('utf-8')
 
@@ -41,13 +43,13 @@ if __name__ == '__main__':
     here = pathlib.Path(__file__).parent.resolve()
 
     with open(here / 'src' / 'headers' / '__init__.py', 'w') as file:
-        file.write(f'"""Headers: generated at: {datetime.datetime.now().isoformat()}\n"""\n')
-        file.write(f'from .string import *\n\n__version__ = "{datetime.date.today().strftime("%Y.%m.%d")}"\n')
+        file.write(f'"""Headers: generated at: {created_at.isoformat()}\n"""\n')
+        file.write(f'from .string import *\n\n__version__ = "{created_at.strftime("%Y.%m.%d")}"\n')
 
     with open(here / 'src' / 'headers' / 'string.py', 'w') as file:
-        file.write(f'"""String Headers: generated at: {datetime.datetime.now().isoformat()}\n"""\n')
+        file.write(f'"""String Headers: generated at: {created_at.isoformat()}\n"""\n')
         write(file, False)
 
     with open(here / 'src' / 'headers' / 'binary.py', 'w') as file:
-        file.write(f'"""Binary Headers: {datetime.datetime.now().isoformat()}\n"""\n')
+        file.write(f'"""Binary Headers: {created_at.isoformat()}\n"""\n')
         write(file, True)

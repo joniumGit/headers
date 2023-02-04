@@ -29,7 +29,8 @@ jobs:
         run: |
           git config --global user.name 'joniumGit'
           git config --global user.email '52005121+joniumGit@users.noreply.github.com'
-          git commit -m "Automatically generated release"
+          git add .
+          git commit -m "Automatically generated release" || echo 'no changes to commit'
           git push || echo 'no changes to commit'
       - name: Build a binary wheel and a source tarball
         run: >-
