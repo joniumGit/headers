@@ -1,4 +1,4 @@
-"""String Headers: generated at: 2023-02-04T19:09:18.775465
+"""String Headers: generated at: 2023-02-04
 """
 
 A_IM = "A-IM"
