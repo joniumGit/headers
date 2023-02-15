@@ -1,4 +1,6 @@
-"""String Headers: generated at: 2023-02-14
+"""HTTP Headers as str
+
+see: https://www.iana.org/assignments/http-fields/http-fields.xhtml
 """
 
 A_IM = "A-IM"

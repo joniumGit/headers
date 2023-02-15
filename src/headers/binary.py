@@ -1,4 +1,6 @@
-"""Binary Headers: 2023-02-14
+"""HTTP Headers as bytes
+
+see: https://www.iana.org/assignments/http-fields/http-fields.xhtml
 """
 
 A_IM = b"A-IM"

@@ -1,14 +1,12 @@
-name: Automatically Publish Python 🐍 distributions 📦 to PyPI
+name: Manually Publish Python 🐍 distributions 📦 to PyPI
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '0 0 */15 * *'
 
 jobs:
-  build-n-test:
+  build-n-publish:
     if: github.repository == 'joniumGit/headers'
-    name: Build and Test Python 🐍 distribution
+    name: Build, Test and Publish Python 🐍 distribution
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
@@ -22,12 +20,6 @@ jobs:
           pip install
           build
           --user
-      - name: Create new version of headers
-        run: >-
-          python create.py
-      - name: Test bundle
-        run: >-
-          python test.py
       - name: Commit changes and tag release
         run: |
           python tag.py
@@ -41,6 +33,5 @@ jobs:
           .
       - name: Publish distribution 📦 to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
-        if: github.event.schedule == '0 0 */15 * *'
         with:
           password: ${{ secrets.PYPI_API_TOKEN }}
