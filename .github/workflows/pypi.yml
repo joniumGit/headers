@@ -3,7 +3,7 @@ name: Automatically Publish Python 🐍 distributions 📦 to PyPI
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 0 */15 * *'
+    - cron: '0 2 */15 * *'
 
 jobs:
   build-n-test:
@@ -41,6 +41,6 @@ jobs:
           .
       - name: Publish distribution 📦 to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
-        if: github.event.schedule == '0 0 */15 * *'
+        if: github.event.schedule == '0 2 */15 * *'
         with:
           password: ${{ secrets.PYPI_API_TOKEN }}
