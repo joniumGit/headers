@@ -20,6 +20,9 @@ jobs:
           pip install
           build
           --user
+      - name: Test bundle
+        run: >-
+          python test.py
       - name: Commit changes and tag release
         run: |
           python tag.py
