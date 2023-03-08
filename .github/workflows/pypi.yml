@@ -23,15 +23,20 @@ jobs:
           build
           --user
       - name: Create new version of headers
+        id: create-headers
+        continue-on-error: true
         run: >-
           python create.py
       - name: Test bundle
+        if: ${{ steps.create-headers.outcome == 'success' }}
         run: >-
           python test.py
       - name: Commit changes and tag release
+        if: ${{ steps.create-headers.outcome == 'success' }}
         run: |
           python tag.py
       - name: Build a binary wheel and a source tarball
+        if: ${{ steps.create-headers.outcome == 'success' }}
         run: >-
           python -m
           build
@@ -41,6 +46,6 @@ jobs:
           .
       - name: Publish distribution 📦 to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
-        if: github.event.schedule == '0 2 */15 * *'
+        if: ${{ github.event.schedule == '0 2 */15 * *' && steps.create-headers.outcome == 'success' }}
         with:
           password: ${{ secrets.PYPI_API_TOKEN }}
