@@ -287,6 +287,18 @@ CLEAR_SITE_DATA = "Clear-Site-Data"
 [Clear Site Data]
 """
 
+CLIENT_CERT = "Client-Cert"
+"""Client-Cert [permanent]
+
+[RFC-ietf-httpbis-client-cert-field-06, Section 2]
+"""
+
+CLIENT_CERT_CHAIN = "Client-Cert-Chain"
+"""Client-Cert-Chain [permanent]
+
+[RFC-ietf-httpbis-client-cert-field-06, Section 2]
+"""
+
 CLOSE = "Close"
 """Close [permanent]
 
