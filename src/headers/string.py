@@ -511,6 +511,18 @@ DIGEST = "Digest"
 [RFC 3230: Instance Digests in HTTP]
 """
 
+DPOP = "DPoP"
+"""DPoP [permanent]
+
+[RFC-ietf-oauth-dpop-16: OAuth 2.0 Demonstrating Proof-of-Possession at the Application Layer (DPoP)]
+"""
+
+DPOP_NONCE = "DPoP-Nonce"
+"""DPoP-Nonce [permanent]
+
+[RFC-ietf-oauth-dpop-16: OAuth 2.0 Demonstrating Proof-of-Possession at the Application Layer (DPoP)]
+"""
+
 EARLY_DATA = "Early-Data"
 """Early-Data [permanent]
 
@@ -831,6 +843,12 @@ PEP_INFO = "Pep-Info"
 [PEP - an Extension Mechanism for HTTP]
 """
 
+PERMISSIONS_POLICY = "Permissions-Policy"
+"""Permissions-Policy [provisional]
+
+[Permissions Policy]
+"""
+
 PICS_LABEL = "PICS-Label"
 """PICS-Label [obsoleted]
 
@@ -1021,6 +1039,12 @@ REPLAY_NONCE = "Replay-Nonce"
 """Replay-Nonce [permanent]
 
 [RFC 8555, Section 6.5.1: Automatic Certificate Management Environment (ACME)]
+"""
+
+REPORTING_ENDPOINTS = "Reporting-Endpoints"
+"""Reporting-Endpoints [provisional]
+
+[Reporting API]
 """
 
 RETRY_AFTER = "Retry-After"
