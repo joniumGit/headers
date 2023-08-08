@@ -290,13 +290,13 @@ CLEAR_SITE_DATA = "Clear-Site-Data"
 CLIENT_CERT = "Client-Cert"
 """Client-Cert [permanent]
 
-[RFC-ietf-httpbis-client-cert-field-06, Section 2]
+[RFC9440, Section 2: Client-Cert HTTP Header Field]
 """
 
 CLIENT_CERT_CHAIN = "Client-Cert-Chain"
 """Client-Cert-Chain [permanent]
 
-[RFC-ietf-httpbis-client-cert-field-06, Section 2]
+[RFC9440, Section 2: Client-Cert HTTP Header Field]
 """
 
 CLOSE = "Close"
@@ -325,10 +325,16 @@ CONTENT_BASE = "Content-Base"
 [RFC 2068: Hypertext Transfer Protocol -- HTTP/1.1][RFC 2616: Hypertext Transfer Protocol -- HTTP/1.1]
 """
 
-CONTENT_DISPOSITION = "Content-Disposition"
-"""Content-Disposition [permanent]
+CONNECTION = "Connection"
+"""Connection [permanent]
 
-[RFC 6266: Use of the Content-Disposition Header Field in the Hypertext Transfer Protocol (HTTP)]
+[RFC9110, Section 7.6.1: HTTP Semantics]
+"""
+
+CONTENT_DIGEST = "Content-Digest"
+"""Content-Digest [permanent]
+
+[RFC-ietf-httpbis-digest-headers-13, Section 2: Digest Fields]
 """
 
 CONTENT_ENCODING = "Content-Encoding"
@@ -506,9 +512,9 @@ DIFFERENTIAL_ID = "Differential-ID"
 """
 
 DIGEST = "Digest"
-"""Digest [permanent]
+"""Digest [obsoleted]
 
-[RFC 3230: Instance Digests in HTTP]
+[RFC 3230: Instance Digests in HTTP][RFC-ietf-httpbis-digest-headers-13, Section 1.3: Digest Fields]
 """
 
 DPOP = "DPoP"
@@ -1047,6 +1053,12 @@ REPORTING_ENDPOINTS = "Reporting-Endpoints"
 [Reporting API]
 """
 
+REPR_DIGEST = "Repr-Digest"
+"""Repr-Digest [permanent]
+
+[RFC-ietf-httpbis-digest-headers-13, Section 3: Digest Fields]
+"""
+
 RETRY_AFTER = "Retry-After"
 """Retry-After [permanent]
 
@@ -1301,10 +1313,22 @@ VIA = "Via"
 [RFC9110, Section 7.6.3: HTTP Semantics]
 """
 
-WANT_DIGEST = "Want-Digest"
-"""Want-Digest [permanent]
+WANT_CONTENT_DIGEST = "Want-Content-Digest"
+"""Want-Content-Digest [permanent]
 
-[RFC 3230: Instance Digests in HTTP]
+[RFC-ietf-httpbis-digest-headers-13, Section 4: Digest Fields]
+"""
+
+WANT_DIGEST = "Want-Digest"
+"""Want-Digest [obsoleted]
+
+[RFC 3230: Instance Digests in HTTP][RFC-ietf-httpbis-digest-headers-13, Section 1.3: Digest Fields]
+"""
+
+WANT_REPR_DIGEST = "Want-Repr-Digest"
+"""Want-Repr-Digest [permanent]
+
+[RFC-ietf-httpbis-digest-headers-13, Section 4: Digest Fields]
 """
 
 WARNING = "Warning"
