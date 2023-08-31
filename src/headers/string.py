@@ -75,6 +75,12 @@ ACCEPT_RANGES = "Accept-Ranges"
 [RFC9110, Section 14.3: HTTP Semantics]
 """
 
+ACCEPT_SIGNATURE = "Accept-Signature"
+"""Accept-Signature [permanent]
+
+[RFC-ietf-httpbis-message-signatures-19, Section 5.1: HTTP Message Signatures]
+"""
+
 ACCESS_CONTROL = "Access-Control"
 """Access-Control [obsoleted]
 
@@ -1167,6 +1173,18 @@ SETPROFILE = "SetProfile"
 """SetProfile [obsoleted]
 
 [Implementation of OPS Over HTTP]
+"""
+
+SIGNATURE = "Signature"
+"""Signature [permanent]
+
+[RFC-ietf-httpbis-message-signatures-19, Section 4.2: HTTP Message Signatures]
+"""
+
+SIGNATURE_INPUT = "Signature-Input"
+"""Signature-Input [permanent]
+
+[RFC-ietf-httpbis-message-signatures-19, Section 4.1: HTTP Message Signatures]
 """
 
 SLUG = "SLUG"
