@@ -331,16 +331,16 @@ CONTENT_BASE = b"Content-Base"
 [RFC 2068: Hypertext Transfer Protocol -- HTTP/1.1][RFC 2616: Hypertext Transfer Protocol -- HTTP/1.1]
 """
 
-CONNECTION = b"Connection"
-"""Connection [permanent]
-
-[RFC9110, Section 7.6.1: HTTP Semantics]
-"""
-
 CONTENT_DIGEST = b"Content-Digest"
 """Content-Digest [permanent]
 
 [RFC-ietf-httpbis-digest-headers-13, Section 2: Digest Fields]
+"""
+
+CONTENT_DISPOSITION = b"Content-Disposition"
+"""Content-Disposition [permanent]
+
+[RFC 6266: Use of the Content-Disposition Header Field in the Hypertext Transfer Protocol (HTTP)]
 """
 
 CONTENT_ENCODING = b"Content-Encoding"
@@ -526,13 +526,13 @@ DIGEST = b"Digest"
 DPOP = b"DPoP"
 """DPoP [permanent]
 
-[RFC-ietf-oauth-dpop-16: OAuth 2.0 Demonstrating Proof-of-Possession at the Application Layer (DPoP)]
+[RFC9449: OAuth 2.0 Demonstrating Proof of Possession (DPoP)]
 """
 
 DPOP_NONCE = b"DPoP-Nonce"
 """DPoP-Nonce [permanent]
 
-[RFC-ietf-oauth-dpop-16: OAuth 2.0 Demonstrating Proof-of-Possession at the Application Layer (DPoP)]
+[RFC9449: OAuth 2.0 Demonstrating Proof of Possession (DPoP)]
 """
 
 EARLY_DATA = b"Early-Data"
