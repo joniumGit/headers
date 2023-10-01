@@ -765,6 +765,12 @@ NEGOTIATE = "Negotiate"
 [RFC 2295: Transparent Content Negotiation in HTTP]
 """
 
+NEL = "NEL"
+"""NEL [permanent]
+
+[Network Error Logging]
+"""
+
 ODATA_ENTITYID = "OData-EntityId"
 """OData-EntityId [permanent]
 
