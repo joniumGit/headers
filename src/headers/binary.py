@@ -855,8 +855,8 @@ PEP = b"PEP"
 [PEP - an Extension Mechanism for HTTP]
 """
 
-PEP_INFO = b"Pep-Info"
-"""Pep-Info [obsoleted]
+PEP_INFO = b"PEP-Info"
+"""PEP-Info [obsoleted]
 
 [PEP - an Extension Mechanism for HTTP]
 """
