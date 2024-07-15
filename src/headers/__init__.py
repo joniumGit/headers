@@ -1,8 +1,8 @@
 """HTTP Headers
 
 see: https://www.iana.org/assignments/http-fields/http-fields.xhtml
-generated at: 2023-10-31T02:16:30.668800
+generated at: 2024-07-15T19:33:33.306551
 """
 from .string import *
 
-__version__ = "2023.10.31"
+__version__ = "2024.07.15"
