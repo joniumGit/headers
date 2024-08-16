@@ -411,6 +411,54 @@ CLOSE = "Close"
 [RFC9112, Section 9.6: HTTP/1.1]
 """
 
+CMCD_OBJECT = "CMCD-Object"
+"""CMCD-Object [provisional]
+
+
+
+[CTA][CTA-5004 Common Media Client Data]
+"""
+
+CMCD_REQUEST = "CMCD-Request"
+"""CMCD-Request [provisional]
+
+
+
+[CTA][CTA-5004 Common Media Client Data]
+"""
+
+CMCD_SESSION = "CMCD-Session"
+"""CMCD-Session [provisional]
+
+
+
+[CTA][CTA-5004 Common Media Client Data]
+"""
+
+CMCD_STATUS = "CMCD-Status"
+"""CMCD-Status [provisional]
+
+
+
+[CTA][CTA-5004 Common Media Client Data]
+"""
+
+CMSD_DYNAMIC = "CMSD-Dynamic"
+"""CMSD-Dynamic [provisional]
+
+
+
+[CTA][CTA-5006 Common Media Server Data (CMSD)]
+"""
+
+CMSD_STATIC = "CMSD-Static"
+"""CMSD-Static [provisional]
+
+
+
+[CTA][CTA-5006 Common Media Server Data (CMSD)]
+"""
+
 CONFIGURATION_CONTEXT = "Configuration-Context"
 """Configuration-Context [provisional]
 
@@ -609,6 +657,14 @@ CROSS_ORIGIN_RESOURCE_POLICY = "Cross-Origin-Resource-Policy"
 
 
 [Fetch]
+"""
+
+CTA_COMMON_ACCESS_TOKEN = "CTA-Common-Access-Token"
+"""CTA-Common-Access-Token [provisional]
+
+
+
+[CTA][Chris_Lemmons]
 """
 
 DASL = "DASL"
