@@ -4,1897 +4,1475 @@ see: https://www.iana.org/assignments/http-fields/http-fields.xhtml
 """
 
 A_IM = b"A-IM"
-"""A-IM [permanent]
-
-
+"""A-IM []
 
 [RFC 3229: Delta encoding in HTTP]
 """
 
 ACCEPT = b"Accept"
-"""Accept [permanent]
-
-
+"""Accept []
 
 [RFC9110, Section 12.5.1: HTTP Semantics]
 """
 
 ACCEPT_ADDITIONS = b"Accept-Additions"
-"""Accept-Additions [permanent]
-
-
+"""Accept-Additions []
 
 [RFC 2324: Hyper Text Coffee Pot Control Protocol (HTCPCP/1.0)]
 """
 
 ACCEPT_CH = b"Accept-CH"
-"""Accept-CH [permanent]
-
-List
+"""Accept-CH [List]
 
 [RFC 8942, Section 3.1: HTTP Client Hints]
 """
 
 ACCEPT_CHARSET = b"Accept-Charset"
-"""Accept-Charset [deprecated]
-
-
+"""Accept-Charset []
 
 [RFC9110, Section 12.5.2: HTTP Semantics]
 """
 
 ACCEPT_DATETIME = b"Accept-Datetime"
-"""Accept-Datetime [permanent]
-
-
+"""Accept-Datetime []
 
 [RFC 7089: HTTP Framework for Time-Based Access to Resource States -- Memento]
 """
 
 ACCEPT_ENCODING = b"Accept-Encoding"
-"""Accept-Encoding [permanent]
-
-
+"""Accept-Encoding []
 
 [RFC9110, Section 12.5.3: HTTP Semantics]
 """
 
 ACCEPT_FEATURES = b"Accept-Features"
-"""Accept-Features [permanent]
-
-
+"""Accept-Features []
 
 [RFC 2295: Transparent Content Negotiation in HTTP]
 """
 
 ACCEPT_LANGUAGE = b"Accept-Language"
-"""Accept-Language [permanent]
-
-
+"""Accept-Language []
 
 [RFC9110, Section 12.5.4: HTTP Semantics]
 """
 
 ACCEPT_PATCH = b"Accept-Patch"
-"""Accept-Patch [permanent]
-
-
+"""Accept-Patch []
 
 [RFC 5789: PATCH Method for HTTP]
 """
 
 ACCEPT_POST = b"Accept-Post"
-"""Accept-Post [permanent]
-
-
+"""Accept-Post []
 
 [Linked Data Platform 1.0]
 """
 
 ACCEPT_RANGES = b"Accept-Ranges"
-"""Accept-Ranges [permanent]
-
-
+"""Accept-Ranges []
 
 [RFC9110, Section 14.3: HTTP Semantics]
 """
 
 ACCEPT_SIGNATURE = b"Accept-Signature"
-"""Accept-Signature [permanent]
-
-
+"""Accept-Signature []
 
 [RFC 9421, Section 5.1: HTTP Message Signatures]
 """
 
 ACCESS_CONTROL = b"Access-Control"
-"""Access-Control [obsoleted]
-
-
+"""Access-Control []
 
 [Access Control for Cross-site Requests]
 """
 
 ACCESS_CONTROL_ALLOW_CREDENTIALS = b"Access-Control-Allow-Credentials"
-"""Access-Control-Allow-Credentials [permanent]
-
-
+"""Access-Control-Allow-Credentials []
 
 [Fetch]
 """
 
 ACCESS_CONTROL_ALLOW_HEADERS = b"Access-Control-Allow-Headers"
-"""Access-Control-Allow-Headers [permanent]
-
-
+"""Access-Control-Allow-Headers []
 
 [Fetch]
 """
 
 ACCESS_CONTROL_ALLOW_METHODS = b"Access-Control-Allow-Methods"
-"""Access-Control-Allow-Methods [permanent]
-
-
+"""Access-Control-Allow-Methods []
 
 [Fetch]
 """
 
 ACCESS_CONTROL_ALLOW_ORIGIN = b"Access-Control-Allow-Origin"
-"""Access-Control-Allow-Origin [permanent]
-
-
+"""Access-Control-Allow-Origin []
 
 [Fetch]
 """
 
 ACCESS_CONTROL_EXPOSE_HEADERS = b"Access-Control-Expose-Headers"
-"""Access-Control-Expose-Headers [permanent]
-
-
+"""Access-Control-Expose-Headers []
 
 [Fetch]
 """
 
 ACCESS_CONTROL_MAX_AGE = b"Access-Control-Max-Age"
-"""Access-Control-Max-Age [permanent]
-
-
+"""Access-Control-Max-Age []
 
 [Fetch]
 """
 
 ACCESS_CONTROL_REQUEST_HEADERS = b"Access-Control-Request-Headers"
-"""Access-Control-Request-Headers [permanent]
-
-
+"""Access-Control-Request-Headers []
 
 [Fetch]
 """
 
 ACCESS_CONTROL_REQUEST_METHOD = b"Access-Control-Request-Method"
-"""Access-Control-Request-Method [permanent]
-
-
+"""Access-Control-Request-Method []
 
 [Fetch]
 """
 
 AGE = b"Age"
-"""Age [permanent]
-
-
+"""Age []
 
 [RFC9111, Section 5.1: HTTP Caching]
 """
 
 ALLOW = b"Allow"
-"""Allow [permanent]
-
-
+"""Allow []
 
 [RFC9110, Section 10.2.1: HTTP Semantics]
 """
 
 ALPN = b"ALPN"
-"""ALPN [permanent]
-
-
+"""ALPN []
 
 [RFC 7639, Section 2: The ALPN HTTP Header Field]
 """
 
 ALT_SVC = b"Alt-Svc"
-"""Alt-Svc [permanent]
-
-
+"""Alt-Svc []
 
 [RFC 7838: HTTP Alternative Services]
 """
 
 ALT_USED = b"Alt-Used"
-"""Alt-Used [permanent]
-
-
+"""Alt-Used []
 
 [RFC 7838: HTTP Alternative Services]
 """
 
 ALTERNATES = b"Alternates"
-"""Alternates [permanent]
-
-
+"""Alternates []
 
 [RFC 2295: Transparent Content Negotiation in HTTP]
 """
 
 AMP_CACHE_TRANSFORM = b"AMP-Cache-Transform"
-"""AMP-Cache-Transform [provisional]
-
-
+"""AMP-Cache-Transform []
 
 [AMP-Cache-Transform HTTP request header]
 """
 
 APPLY_TO_REDIRECT_REF = b"Apply-To-Redirect-Ref"
-"""Apply-To-Redirect-Ref [permanent]
-
-
+"""Apply-To-Redirect-Ref []
 
 [RFC 4437: Web Distributed Authoring and Versioning (WebDAV) Redirect Reference Resources]
 """
 
 AUTHENTICATION_CONTROL = b"Authentication-Control"
-"""Authentication-Control [permanent]
-
-
+"""Authentication-Control []
 
 [RFC 8053, Section 4: HTTP Authentication Extensions for Interactive Clients]
 """
 
 AUTHENTICATION_INFO = b"Authentication-Info"
-"""Authentication-Info [permanent]
-
-
+"""Authentication-Info []
 
 [RFC9110, Section 11.6.3: HTTP Semantics]
 """
 
 AUTHORIZATION = b"Authorization"
-"""Authorization [permanent]
-
-
+"""Authorization []
 
 [RFC9110, Section 11.6.2: HTTP Semantics]
 """
 
 C_EXT = b"C-Ext"
-"""C-Ext [obsoleted]
+"""C-Ext []
 
+[RFC 2774: An HTTP Extension Framework]
 
-
-[RFC 2774: An HTTP Extension Framework][status-change-http-experiments-to-historic]
+[Status change of HTTP experiments to Historic]
 """
 
 C_MAN = b"C-Man"
-"""C-Man [obsoleted]
+"""C-Man []
 
+[RFC 2774: An HTTP Extension Framework]
 
-
-[RFC 2774: An HTTP Extension Framework][status-change-http-experiments-to-historic]
+[Status change of HTTP experiments to Historic]
 """
 
 C_OPT = b"C-Opt"
-"""C-Opt [obsoleted]
+"""C-Opt []
 
+[RFC 2774: An HTTP Extension Framework]
 
-
-[RFC 2774: An HTTP Extension Framework][status-change-http-experiments-to-historic]
+[Status change of HTTP experiments to Historic]
 """
 
 C_PEP = b"C-PEP"
-"""C-PEP [obsoleted]
+"""C-PEP []
 
+[PEP - an Extension Mechanism for HTTP]
 
-
-[PEP - an Extension Mechanism for HTTP][status-change-http-experiments-to-historic]
+[Status change of HTTP experiments to Historic]
 """
 
 C_PEP_INFO = b"C-PEP-Info"
-"""C-PEP-Info [deprecated]
+"""C-PEP-Info []
 
+[PEP - an Extension Mechanism for HTTP]
 
-
-[PEP - an Extension Mechanism for HTTP][status-change-http-experiments-to-historic]
+[Status change of HTTP experiments to Historic]
 """
 
 CACHE_CONTROL = b"Cache-Control"
-"""Cache-Control [permanent]
-
-
+"""Cache-Control []
 
 [RFC9111, Section 5.2]
 """
 
 CACHE_STATUS = b"Cache-Status"
-"""Cache-Status [permanent]
-
-List
+"""Cache-Status [List]
 
 [RFC9211: The Cache-Status HTTP Response Header Field]
 """
 
 CAL_MANAGED_ID = b"Cal-Managed-ID"
-"""Cal-Managed-ID [permanent]
-
-
+"""Cal-Managed-ID []
 
 [RFC 8607, Section 5.1: Calendaring Extensions to WebDAV (CalDAV): Managed Attachments]
 """
 
 CALDAV_TIMEZONES = b"CalDAV-Timezones"
-"""CalDAV-Timezones [permanent]
-
-
+"""CalDAV-Timezones []
 
 [RFC 7809, Section 7.1: Calendaring Extensions to WebDAV (CalDAV): Time Zones by Reference]
 """
 
 CAPSULE_PROTOCOL = b"Capsule-Protocol"
-"""Capsule-Protocol [permanent]
-
-
+"""Capsule-Protocol []
 
 [RFC9297]
 """
 
 CDN_CACHE_CONTROL = b"CDN-Cache-Control"
-"""CDN-Cache-Control [permanent]
-
-Dictionary
+"""CDN-Cache-Control [Dictionary]
 
 [RFC9213: Targeted HTTP Cache Control]
+
+Cache directives targeted at content delivery networks
 """
 
 CDN_LOOP = b"CDN-Loop"
-"""CDN-Loop [permanent]
-
-
+"""CDN-Loop []
 
 [RFC 8586: Loop Detection in Content Delivery Networks (CDNs)]
 """
 
 CERT_NOT_AFTER = b"Cert-Not-After"
-"""Cert-Not-After [permanent]
-
-
+"""Cert-Not-After []
 
 [RFC 8739, Section 3.3: Support for Short-Term, Automatically Renewed (STAR) Certificates in the Automated Certificate Management Environment (ACME)]
 """
 
 CERT_NOT_BEFORE = b"Cert-Not-Before"
-"""Cert-Not-Before [permanent]
-
-
+"""Cert-Not-Before []
 
 [RFC 8739, Section 3.3: Support for Short-Term, Automatically Renewed (STAR) Certificates in the Automated Certificate Management Environment (ACME)]
 """
 
 CLEAR_SITE_DATA = b"Clear-Site-Data"
-"""Clear-Site-Data [permanent]
-
-
+"""Clear-Site-Data []
 
 [Clear Site Data]
 """
 
 CLIENT_CERT = b"Client-Cert"
-"""Client-Cert [permanent]
-
-
+"""Client-Cert []
 
 [RFC9440, Section 2: Client-Cert HTTP Header Field]
 """
 
 CLIENT_CERT_CHAIN = b"Client-Cert-Chain"
-"""Client-Cert-Chain [permanent]
-
-
+"""Client-Cert-Chain []
 
 [RFC9440, Section 2: Client-Cert HTTP Header Field]
 """
 
 CLOSE = b"Close"
-"""Close [permanent]
-
-
+"""Close []
 
 [RFC9112, Section 9.6: HTTP/1.1]
+
+(reserved)
 """
 
 CMCD_OBJECT = b"CMCD-Object"
-"""CMCD-Object [provisional]
-
-
+"""CMCD-Object []
 
 [CTA][CTA-5004 Common Media Client Data]
 """
 
 CMCD_REQUEST = b"CMCD-Request"
-"""CMCD-Request [provisional]
-
-
+"""CMCD-Request []
 
 [CTA][CTA-5004 Common Media Client Data]
 """
 
 CMCD_SESSION = b"CMCD-Session"
-"""CMCD-Session [provisional]
-
-
+"""CMCD-Session []
 
 [CTA][CTA-5004 Common Media Client Data]
 """
 
 CMCD_STATUS = b"CMCD-Status"
-"""CMCD-Status [provisional]
-
-
+"""CMCD-Status []
 
 [CTA][CTA-5004 Common Media Client Data]
 """
 
 CMSD_DYNAMIC = b"CMSD-Dynamic"
-"""CMSD-Dynamic [provisional]
-
-
+"""CMSD-Dynamic []
 
 [CTA][CTA-5006 Common Media Server Data (CMSD)]
 """
 
 CMSD_STATIC = b"CMSD-Static"
-"""CMSD-Static [provisional]
-
-
+"""CMSD-Static []
 
 [CTA][CTA-5006 Common Media Server Data (CMSD)]
 """
 
 CONFIGURATION_CONTEXT = b"Configuration-Context"
-"""Configuration-Context [provisional]
-
-
+"""Configuration-Context []
 
 [OSLC Configuration Management Version 1.0. Part 3: Configuration Specification]
 """
 
 CONNECTION = b"Connection"
-"""Connection [permanent]
-
-
+"""Connection []
 
 [RFC9110, Section 7.6.1: HTTP Semantics]
 """
 
 CONTENT_BASE = b"Content-Base"
-"""Content-Base [obsoleted]
+"""Content-Base []
 
+[RFC 2068: Hypertext Transfer Protocol -- HTTP/1.1]
 
-
-[RFC 2068: Hypertext Transfer Protocol -- HTTP/1.1][RFC 2616: Hypertext Transfer Protocol -- HTTP/1.1]
+Obsoleted by [RFC 2616: Hypertext Transfer Protocol -- HTTP/1.1]
 """
 
 CONTENT_DIGEST = b"Content-Digest"
-"""Content-Digest [permanent]
-
-
+"""Content-Digest []
 
 [RFC 9530, Section 2: Digest Fields]
 """
 
 CONTENT_DISPOSITION = b"Content-Disposition"
-"""Content-Disposition [permanent]
-
-
+"""Content-Disposition []
 
 [RFC 6266: Use of the Content-Disposition Header Field in the Hypertext Transfer Protocol (HTTP)]
 """
 
 CONTENT_ENCODING = b"Content-Encoding"
-"""Content-Encoding [permanent]
-
-
+"""Content-Encoding []
 
 [RFC9110, Section 8.4: HTTP Semantics]
 """
 
 CONTENT_ID = b"Content-ID"
-"""Content-ID [deprecated]
-
-
+"""Content-ID []
 
 [The HTTP Distribution and Replication Protocol]
 """
 
 CONTENT_LANGUAGE = b"Content-Language"
-"""Content-Language [permanent]
-
-
+"""Content-Language []
 
 [RFC9110, Section 8.5: HTTP Semantics]
 """
 
 CONTENT_LENGTH = b"Content-Length"
-"""Content-Length [permanent]
-
-
+"""Content-Length []
 
 [RFC9110, Section 8.6: HTTP Semantics]
 """
 
 CONTENT_LOCATION = b"Content-Location"
-"""Content-Location [permanent]
-
-
+"""Content-Location []
 
 [RFC9110, Section 8.7: HTTP Semantics]
 """
 
 CONTENT_MD5 = b"Content-MD5"
-"""Content-MD5 [obsoleted]
+"""Content-MD5 []
 
+[RFC 2616, Section 14.15: Hypertext Transfer Protocol -- HTTP/1.1]
 
-
-[RFC 2616, Section 14.15: Hypertext Transfer Protocol -- HTTP/1.1][RFC 7231, Appendix B: Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content]
+Obsoleted by [RFC 7231, Appendix B: Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content]
 """
 
 CONTENT_RANGE = b"Content-Range"
-"""Content-Range [permanent]
-
-
+"""Content-Range []
 
 [RFC9110, Section 14.4: HTTP Semantics]
 """
 
 CONTENT_SCRIPT_TYPE = b"Content-Script-Type"
-"""Content-Script-Type [obsoleted]
-
-
+"""Content-Script-Type []
 
 [HTML 4.01 Specification]
 """
 
 CONTENT_SECURITY_POLICY = b"Content-Security-Policy"
-"""Content-Security-Policy [permanent]
-
-
+"""Content-Security-Policy []
 
 [Content Security Policy Level 3]
 """
 
 CONTENT_SECURITY_POLICY_REPORT_ONLY = b"Content-Security-Policy-Report-Only"
-"""Content-Security-Policy-Report-Only [permanent]
-
-
+"""Content-Security-Policy-Report-Only []
 
 [Content Security Policy Level 3]
 """
 
 CONTENT_STYLE_TYPE = b"Content-Style-Type"
-"""Content-Style-Type [obsoleted]
-
-
+"""Content-Style-Type []
 
 [HTML 4.01 Specification]
 """
 
 CONTENT_TYPE = b"Content-Type"
-"""Content-Type [permanent]
-
-
+"""Content-Type []
 
 [RFC9110, Section 8.3: HTTP Semantics]
 """
 
 CONTENT_VERSION = b"Content-Version"
-"""Content-Version [obsoleted]
-
-
+"""Content-Version []
 
 [RFC 2068: Hypertext Transfer Protocol -- HTTP/1.1]
 """
 
 COOKIE = b"Cookie"
-"""Cookie [permanent]
-
-
+"""Cookie []
 
 [RFC 6265: HTTP State Management Mechanism]
 """
 
 COOKIE2 = b"Cookie2"
-"""Cookie2 [obsoleted]
+"""Cookie2 []
 
+[RFC 2965: HTTP State Management Mechanism]
 
-
-[RFC 2965: HTTP State Management Mechanism][RFC 6265: HTTP State Management Mechanism]
+Obsoleted by [RFC 6265: HTTP State Management Mechanism]
 """
 
 CROSS_ORIGIN_EMBEDDER_POLICY = b"Cross-Origin-Embedder-Policy"
-"""Cross-Origin-Embedder-Policy [permanent]
-
-Item
+"""Cross-Origin-Embedder-Policy [Item]
 
 [HTML]
 """
 
 CROSS_ORIGIN_EMBEDDER_POLICY_REPORT_ONLY = b"Cross-Origin-Embedder-Policy-Report-Only"
-"""Cross-Origin-Embedder-Policy-Report-Only [permanent]
-
-Item
+"""Cross-Origin-Embedder-Policy-Report-Only [Item]
 
 [HTML]
 """
 
 CROSS_ORIGIN_OPENER_POLICY = b"Cross-Origin-Opener-Policy"
-"""Cross-Origin-Opener-Policy [permanent]
-
-Item
+"""Cross-Origin-Opener-Policy [Item]
 
 [HTML]
 """
 
 CROSS_ORIGIN_OPENER_POLICY_REPORT_ONLY = b"Cross-Origin-Opener-Policy-Report-Only"
-"""Cross-Origin-Opener-Policy-Report-Only [permanent]
-
-Item
+"""Cross-Origin-Opener-Policy-Report-Only [Item]
 
 [HTML]
 """
 
 CROSS_ORIGIN_RESOURCE_POLICY = b"Cross-Origin-Resource-Policy"
-"""Cross-Origin-Resource-Policy [permanent]
-
-
+"""Cross-Origin-Resource-Policy []
 
 [Fetch]
 """
 
 CTA_COMMON_ACCESS_TOKEN = b"CTA-Common-Access-Token"
-"""CTA-Common-Access-Token [provisional]
-
-
+"""CTA-Common-Access-Token []
 
 [CTA][Chris_Lemmons]
 """
 
 DASL = b"DASL"
-"""DASL [permanent]
-
-
+"""DASL []
 
 [RFC 5323: Web Distributed Authoring and Versioning (WebDAV) SEARCH]
 """
 
 DATE = b"Date"
-"""Date [permanent]
-
-
+"""Date []
 
 [RFC9110, Section 6.6.1: HTTP Semantics]
 """
 
 DAV = b"DAV"
-"""DAV [permanent]
-
-
+"""DAV []
 
 [RFC 4918: HTTP Extensions for Web Distributed Authoring and Versioning (WebDAV)]
 """
 
 DEFAULT_STYLE = b"Default-Style"
-"""Default-Style [obsoleted]
-
-
+"""Default-Style []
 
 [HTML 4.01 Specification]
 """
 
 DELTA_BASE = b"Delta-Base"
-"""Delta-Base [permanent]
-
-
+"""Delta-Base []
 
 [RFC 3229: Delta encoding in HTTP]
 """
 
 DEPTH = b"Depth"
-"""Depth [permanent]
-
-
+"""Depth []
 
 [RFC 4918: HTTP Extensions for Web Distributed Authoring and Versioning (WebDAV)]
 """
 
 DERIVED_FROM = b"Derived-From"
-"""Derived-From [obsoleted]
-
-
+"""Derived-From []
 
 [RFC 2068: Hypertext Transfer Protocol -- HTTP/1.1]
 """
 
 DESTINATION = b"Destination"
-"""Destination [permanent]
-
-
+"""Destination []
 
 [RFC 4918: HTTP Extensions for Web Distributed Authoring and Versioning (WebDAV)]
 """
 
 DIFFERENTIAL_ID = b"Differential-ID"
-"""Differential-ID [deprecated]
-
-
+"""Differential-ID []
 
 [The HTTP Distribution and Replication Protocol]
 """
 
 DIGEST = b"Digest"
-"""Digest [obsoleted]
+"""Digest []
 
+[RFC 3230: Instance Digests in HTTP]
 
-
-[RFC 3230: Instance Digests in HTTP][RFC 9530, Section 1.3: Digest Fields]
+Obsoleted by [RFC 9530, Section 1.3: Digest Fields]
 """
 
 DPOP = b"DPoP"
-"""DPoP [permanent]
-
-
+"""DPoP []
 
 [RFC9449: OAuth 2.0 Demonstrating Proof of Possession (DPoP)]
 """
 
 DPOP_NONCE = b"DPoP-Nonce"
-"""DPoP-Nonce [permanent]
-
-
+"""DPoP-Nonce []
 
 [RFC9449: OAuth 2.0 Demonstrating Proof of Possession (DPoP)]
 """
 
 EARLY_DATA = b"Early-Data"
-"""Early-Data [permanent]
-
-
+"""Early-Data []
 
 [RFC 8470: Using Early Data in HTTP]
 """
 
 EDIINT_FEATURES = b"EDIINT-Features"
-"""EDIINT-Features [provisional]
-
-
+"""EDIINT-Features []
 
 [RFC 6017: Electronic Data Interchange - Internet Integration (EDIINT) Features Header Field]
 """
 
 ETAG = b"ETag"
-"""ETag [permanent]
-
-
+"""ETag []
 
 [RFC9110, Section 8.8.3: HTTP Semantics]
 """
 
 EXPECT = b"Expect"
-"""Expect [permanent]
-
-
+"""Expect []
 
 [RFC9110, Section 10.1.1: HTTP Semantics]
 """
 
 EXPECT_CT = b"Expect-CT"
-"""Expect-CT [deprecated]
+"""Expect-CT []
 
+[RFC9163: Expect-CT Extension for HTTP]
 
-
-[RFC9163: Expect-CT Extension for HTTP][IESG][HTTPBIS]
+Obsoleted by [IESG]        [HTTPBIS]
 """
 
 EXPIRES = b"Expires"
-"""Expires [permanent]
-
-
+"""Expires []
 
 [RFC9111, Section 5.3: HTTP Caching]
 """
 
 EXT = b"Ext"
-"""Ext [obsoleted]
+"""Ext []
 
+[RFC 2774: An HTTP Extension Framework]
 
-
-[RFC 2774: An HTTP Extension Framework][status-change-http-experiments-to-historic]
+[Status change of HTTP experiments to Historic]
 """
 
 FORWARDED = b"Forwarded"
-"""Forwarded [permanent]
-
-
+"""Forwarded []
 
 [RFC 7239: Forwarded HTTP Extension]
 """
 
 FROM = b"From"
-"""From [permanent]
-
-
+"""From []
 
 [RFC9110, Section 10.1.2: HTTP Semantics]
 """
 
 GETPROFILE = b"GetProfile"
-"""GetProfile [obsoleted]
-
-
+"""GetProfile []
 
 [Implementation of OPS Over HTTP]
 """
 
 HOBAREG = b"Hobareg"
-"""Hobareg [permanent]
-
-
+"""Hobareg []
 
 [RFC 7486, Section 6.1.1: HTTP Origin-Bound Authentication (HOBA)]
 """
 
 HOST = b"Host"
-"""Host [permanent]
-
-
+"""Host []
 
 [RFC9110, Section 7.2: HTTP Semantics]
 """
 
 HTTP2_SETTINGS = b"HTTP2-Settings"
-"""HTTP2-Settings [obsoleted]
-
-
+"""HTTP2-Settings []
 
 [RFC 7540, Section 3.2.1: Hypertext Transfer Protocol Version 2 (HTTP/2)]
+
+Obsolete; see Section 11.1 of [RFC9113]
 """
 
 IF = b"If"
-"""If [permanent]
-
-
+"""If []
 
 [RFC 4918: HTTP Extensions for Web Distributed Authoring and Versioning (WebDAV)]
 """
 
 IF_MATCH = b"If-Match"
-"""If-Match [permanent]
-
-
+"""If-Match []
 
 [RFC9110, Section 13.1.1: HTTP Semantics]
 """
 
 IF_MODIFIED_SINCE = b"If-Modified-Since"
-"""If-Modified-Since [permanent]
-
-
+"""If-Modified-Since []
 
 [RFC9110, Section 13.1.3: HTTP Semantics]
 """
 
 IF_NONE_MATCH = b"If-None-Match"
-"""If-None-Match [permanent]
-
-
+"""If-None-Match []
 
 [RFC9110, Section 13.1.2: HTTP Semantics]
 """
 
 IF_RANGE = b"If-Range"
-"""If-Range [permanent]
-
-
+"""If-Range []
 
 [RFC9110, Section 13.1.5: HTTP Semantics]
 """
 
 IF_SCHEDULE_TAG_MATCH = b"If-Schedule-Tag-Match"
-"""If-Schedule-Tag-Match [permanent]
-
-
+"""If-Schedule-Tag-Match []
 
 [ RFC 6338: Scheduling Extensions to CalDAV]
 """
 
 IF_UNMODIFIED_SINCE = b"If-Unmodified-Since"
-"""If-Unmodified-Since [permanent]
-
-
+"""If-Unmodified-Since []
 
 [RFC9110, Section 13.1.4: HTTP Semantics]
 """
 
 IM = b"IM"
-"""IM [permanent]
-
-
+"""IM []
 
 [RFC 3229: Delta encoding in HTTP]
 """
 
 INCLUDE_REFERRED_TOKEN_BINDING_ID = b"Include-Referred-Token-Binding-ID"
-"""Include-Referred-Token-Binding-ID [permanent]
-
-
+"""Include-Referred-Token-Binding-ID []
 
 [RFC 8473: Token Binding over HTTP]
 """
 
 ISOLATION = b"Isolation"
-"""Isolation [provisional]
-
-
+"""Isolation []
 
 [OData Version 4.01 Part 1: Protocol][OASIS][Chet_Ensign]
 """
 
 KEEP_ALIVE = b"Keep-Alive"
-"""Keep-Alive [permanent]
-
-
+"""Keep-Alive []
 
 [RFC 2068: Hypertext Transfer Protocol -- HTTP/1.1]
 """
 
 LABEL = b"Label"
-"""Label [permanent]
-
-
+"""Label []
 
 [RFC 3253: Versioning Extensions to WebDAV: (Web Distributed Authoring and Versioning)]
 """
 
 LAST_EVENT_ID = b"Last-Event-ID"
-"""Last-Event-ID [permanent]
-
-
+"""Last-Event-ID []
 
 [HTML]
 """
 
 LAST_MODIFIED = b"Last-Modified"
-"""Last-Modified [permanent]
-
-
+"""Last-Modified []
 
 [RFC9110, Section 8.8.2: HTTP Semantics]
 """
 
 LINK = b"Link"
-"""Link [permanent]
-
-
+"""Link []
 
 [RFC 8288: Web Linking]
 """
 
 LINK_TEMPLATE = b"Link-Template"
-"""Link-Template [permanent]
-
-
+"""Link-Template []
 
 [RFC-ietf-httpapi-link-template-04: The Link-Template HTTP Header Field]
 """
 
 LOCATION = b"Location"
-"""Location [permanent]
-
-
+"""Location []
 
 [RFC9110, Section 10.2.2: HTTP Semantics]
 """
 
 LOCK_TOKEN = b"Lock-Token"
-"""Lock-Token [permanent]
-
-
+"""Lock-Token []
 
 [RFC 4918: HTTP Extensions for Web Distributed Authoring and Versioning (WebDAV)]
 """
 
 MAN = b"Man"
-"""Man [obsoleted]
+"""Man []
 
+[RFC 2774: An HTTP Extension Framework]
 
-
-[RFC 2774: An HTTP Extension Framework][status-change-http-experiments-to-historic]
+[Status change of HTTP experiments to Historic]
 """
 
 MAX_FORWARDS = b"Max-Forwards"
-"""Max-Forwards [permanent]
-
-
+"""Max-Forwards []
 
 [RFC9110, Section 7.6.2: HTTP Semantics]
 """
 
 MEMENTO_DATETIME = b"Memento-Datetime"
-"""Memento-Datetime [permanent]
-
-
+"""Memento-Datetime []
 
 [RFC 7089: HTTP Framework for Time-Based Access to Resource States -- Memento]
 """
 
 METER = b"Meter"
-"""Meter [permanent]
-
-
+"""Meter []
 
 [RFC 2227: Simple Hit-Metering and Usage-Limiting for HTTP]
 """
 
 METHOD_CHECK = b"Method-Check"
-"""Method-Check [obsoleted]
-
-
+"""Method-Check []
 
 [Access Control for Cross-site Requests]
 """
 
 METHOD_CHECK_EXPIRES = b"Method-Check-Expires"
-"""Method-Check-Expires [obsoleted]
-
-
+"""Method-Check-Expires []
 
 [Access Control for Cross-site Requests]
 """
 
 MIME_VERSION = b"MIME-Version"
-"""MIME-Version [permanent]
-
-
+"""MIME-Version []
 
 [RFC9112, Appendix B.1: HTTP/1.1]
 """
 
 NEGOTIATE = b"Negotiate"
-"""Negotiate [permanent]
-
-
+"""Negotiate []
 
 [RFC 2295: Transparent Content Negotiation in HTTP]
 """
 
 NEL = b"NEL"
-"""NEL [permanent]
-
-
+"""NEL []
 
 [Network Error Logging]
 """
 
 ODATA_ENTITYID = b"OData-EntityId"
-"""OData-EntityId [permanent]
-
-
+"""OData-EntityId []
 
 [OData Version 4.01 Part 1: Protocol][OASIS][Chet_Ensign]
 """
 
 ODATA_ISOLATION = b"OData-Isolation"
-"""OData-Isolation [permanent]
-
-
+"""OData-Isolation []
 
 [OData Version 4.01 Part 1: Protocol][OASIS][Chet_Ensign]
 """
 
 ODATA_MAXVERSION = b"OData-MaxVersion"
-"""OData-MaxVersion [permanent]
-
-
+"""OData-MaxVersion []
 
 [OData Version 4.01 Part 1: Protocol][OASIS][Chet_Ensign]
 """
 
 ODATA_VERSION = b"OData-Version"
-"""OData-Version [permanent]
-
-
+"""OData-Version []
 
 [OData Version 4.01 Part 1: Protocol][OASIS][Chet_Ensign]
 """
 
 OPT = b"Opt"
-"""Opt [obsoleted]
+"""Opt []
 
+[RFC 2774: An HTTP Extension Framework]
 
-
-[RFC 2774: An HTTP Extension Framework][status-change-http-experiments-to-historic]
+[Status change of HTTP experiments to Historic]
 """
 
 OPTIONAL_WWW_AUTHENTICATE = b"Optional-WWW-Authenticate"
-"""Optional-WWW-Authenticate [permanent]
-
-
+"""Optional-WWW-Authenticate []
 
 [RFC 8053, Section 3: HTTP Authentication Extensions for Interactive Clients]
 """
 
 ORDERING_TYPE = b"Ordering-Type"
-"""Ordering-Type [permanent]
-
-
+"""Ordering-Type []
 
 [RFC 3648: Web Distributed Authoring and Versioning (WebDAV) Ordered Collections Protocol]
 """
 
 ORIGIN = b"Origin"
-"""Origin [permanent]
-
-
+"""Origin []
 
 [RFC 6454: The Web Origin Concept]
 """
 
 ORIGIN_AGENT_CLUSTER = b"Origin-Agent-Cluster"
-"""Origin-Agent-Cluster [permanent]
-
-Item
+"""Origin-Agent-Cluster [Item]
 
 [HTML]
 """
 
 OSCORE = b"OSCORE"
-"""OSCORE [permanent]
-
-
+"""OSCORE []
 
 [RFC 8613, Section 11.1: Object Security for Constrained RESTful Environments (OSCORE)]
 """
 
 OSLC_CORE_VERSION = b"OSLC-Core-Version"
-"""OSLC-Core-Version [permanent]
-
-
+"""OSLC-Core-Version []
 
 [OASIS Project Specification 01][OASIS][Chet_Ensign]
 """
 
 OVERWRITE = b"Overwrite"
-"""Overwrite [permanent]
-
-
+"""Overwrite []
 
 [RFC 4918: HTTP Extensions for Web Distributed Authoring and Versioning (WebDAV)]
 """
 
 P3P = b"P3P"
-"""P3P [obsoleted]
-
-
+"""P3P []
 
 [The Platform for Privacy Preferences 1.0 (P3P1.0) Specification]
 """
 
 PEP = b"PEP"
-"""PEP [obsoleted]
-
-
+"""PEP []
 
 [PEP - an Extension Mechanism for HTTP]
 """
 
 PEP_INFO = b"PEP-Info"
-"""PEP-Info [obsoleted]
-
-
+"""PEP-Info []
 
 [PEP - an Extension Mechanism for HTTP]
 """
 
 PERMISSIONS_POLICY = b"Permissions-Policy"
-"""Permissions-Policy [provisional]
-
-
+"""Permissions-Policy []
 
 [Permissions Policy]
 """
 
 PICS_LABEL = b"PICS-Label"
-"""PICS-Label [obsoleted]
-
-
+"""PICS-Label []
 
 [PICS Label Distribution Label Syntax and Communication Protocols]
 """
 
 PING_FROM = b"Ping-From"
-"""Ping-From [permanent]
-
-
+"""Ping-From []
 
 [HTML]
 """
 
 PING_TO = b"Ping-To"
-"""Ping-To [permanent]
-
-
+"""Ping-To []
 
 [HTML]
 """
 
 POSITION = b"Position"
-"""Position [permanent]
-
-
+"""Position []
 
 [RFC 3648: Web Distributed Authoring and Versioning (WebDAV) Ordered Collections Protocol]
 """
 
 PRAGMA = b"Pragma"
-"""Pragma [deprecated]
-
-
+"""Pragma []
 
 [RFC9111, Section 5.4: HTTP Caching]
 """
 
 PREFER = b"Prefer"
-"""Prefer [permanent]
-
-
+"""Prefer []
 
 [RFC 7240: Prefer Header for HTTP]
 """
 
 PREFERENCE_APPLIED = b"Preference-Applied"
-"""Preference-Applied [permanent]
-
-
+"""Preference-Applied []
 
 [RFC 7240: Prefer Header for HTTP]
 """
 
 PRIORITY = b"Priority"
-"""Priority [permanent]
-
-Dictionary
+"""Priority [Dictionary]
 
 [RFC9218: Extensible Prioritization Scheme for HTTP]
 """
 
 PROFILEOBJECT = b"ProfileObject"
-"""ProfileObject [obsoleted]
-
-
+"""ProfileObject []
 
 [Implementation of OPS Over HTTP]
 """
 
 PROTOCOL = b"Protocol"
-"""Protocol [obsoleted]
-
-
+"""Protocol []
 
 [PICS Label Distribution Label Syntax and Communication Protocols]
 """
 
 PROTOCOL_INFO = b"Protocol-Info"
-"""Protocol-Info [deprecated]
-
-
+"""Protocol-Info []
 
 [White Paper: Joint Electronic Payment Initiative]
 """
 
 PROTOCOL_QUERY = b"Protocol-Query"
-"""Protocol-Query [deprecated]
-
-
+"""Protocol-Query []
 
 [White Paper: Joint Electronic Payment Initiative]
 """
 
 PROTOCOL_REQUEST = b"Protocol-Request"
-"""Protocol-Request [obsoleted]
-
-
+"""Protocol-Request []
 
 [PICS Label Distribution Label Syntax and Communication Protocols]
 """
 
 PROXY_AUTHENTICATE = b"Proxy-Authenticate"
-"""Proxy-Authenticate [permanent]
-
-
+"""Proxy-Authenticate []
 
 [RFC9110, Section 11.7.1: HTTP Semantics]
 """
 
 PROXY_AUTHENTICATION_INFO = b"Proxy-Authentication-Info"
-"""Proxy-Authentication-Info [permanent]
-
-
+"""Proxy-Authentication-Info []
 
 [RFC9110, Section 11.7.3: HTTP Semantics]
 """
 
 PROXY_AUTHORIZATION = b"Proxy-Authorization"
-"""Proxy-Authorization [permanent]
-
-
+"""Proxy-Authorization []
 
 [RFC9110, Section 11.7.2: HTTP Semantics]
 """
 
 PROXY_FEATURES = b"Proxy-Features"
-"""Proxy-Features [obsoleted]
-
-
+"""Proxy-Features []
 
 [Notification for Proxy Caches]
 """
 
 PROXY_INSTRUCTION = b"Proxy-Instruction"
-"""Proxy-Instruction [obsoleted]
-
-
+"""Proxy-Instruction []
 
 [Notification for Proxy Caches]
 """
 
 PROXY_STATUS = b"Proxy-Status"
-"""Proxy-Status [permanent]
-
-List
+"""Proxy-Status [List]
 
 [RFC9209: The Proxy-Status HTTP Response Header Field]
 """
 
 PUBLIC = b"Public"
-"""Public [obsoleted]
-
-
+"""Public []
 
 [RFC 2068: Hypertext Transfer Protocol -- HTTP/1.1]
 """
 
 PUBLIC_KEY_PINS = b"Public-Key-Pins"
-"""Public-Key-Pins [permanent]
-
-
+"""Public-Key-Pins []
 
 [RFC 7469: Public Key Pinning Extension for HTTP]
 """
 
 PUBLIC_KEY_PINS_REPORT_ONLY = b"Public-Key-Pins-Report-Only"
-"""Public-Key-Pins-Report-Only [permanent]
-
-
+"""Public-Key-Pins-Report-Only []
 
 [RFC 7469: Public Key Pinning Extension for HTTP]
 """
 
 RANGE = b"Range"
-"""Range [permanent]
-
-
+"""Range []
 
 [RFC9110, Section 14.2: HTTP Semantics]
 """
 
 REDIRECT_REF = b"Redirect-Ref"
-"""Redirect-Ref [permanent]
-
-
+"""Redirect-Ref []
 
 [RFC 4437: Web Distributed Authoring and Versioning (WebDAV) Redirect Reference Resources]
 """
 
 REFERER = b"Referer"
-"""Referer [permanent]
-
-
+"""Referer []
 
 [RFC9110, Section 10.1.3: HTTP Semantics]
 """
 
 REFERER_ROOT = b"Referer-Root"
-"""Referer-Root [obsoleted]
-
-
+"""Referer-Root []
 
 [Access Control for Cross-site Requests]
 """
 
+REFERRER_POLICY = b"Referrer-Policy"
+"""Referrer-Policy []
+
+[Referrer Policy]
+
+The header name does not share the HTTP Referer header's misspelling.
+"""
+
 REFRESH = b"Refresh"
-"""Refresh [permanent]
-
-
+"""Refresh []
 
 [HTML]
 """
 
 REPEATABILITY_CLIENT_ID = b"Repeatability-Client-ID"
-"""Repeatability-Client-ID [provisional]
-
-
+"""Repeatability-Client-ID []
 
 [Repeatable Requests Version 1.0][OASIS][Chet_Ensign]
 """
 
 REPEATABILITY_FIRST_SENT = b"Repeatability-First-Sent"
-"""Repeatability-First-Sent [provisional]
-
-
+"""Repeatability-First-Sent []
 
 [Repeatable Requests Version 1.0][OASIS][Chet_Ensign]
 """
 
 REPEATABILITY_REQUEST_ID = b"Repeatability-Request-ID"
-"""Repeatability-Request-ID [provisional]
-
-
+"""Repeatability-Request-ID []
 
 [Repeatable Requests Version 1.0][OASIS][Chet_Ensign]
 """
 
 REPEATABILITY_RESULT = b"Repeatability-Result"
-"""Repeatability-Result [provisional]
-
-
+"""Repeatability-Result []
 
 [Repeatable Requests Version 1.0][OASIS][Chet_Ensign]
 """
 
 REPLAY_NONCE = b"Replay-Nonce"
-"""Replay-Nonce [permanent]
-
-
+"""Replay-Nonce []
 
 [RFC 8555, Section 6.5.1: Automatic Certificate Management Environment (ACME)]
 """
 
 REPORTING_ENDPOINTS = b"Reporting-Endpoints"
-"""Reporting-Endpoints [provisional]
-
-
+"""Reporting-Endpoints []
 
 [Reporting API]
 """
 
 REPR_DIGEST = b"Repr-Digest"
-"""Repr-Digest [permanent]
-
-
+"""Repr-Digest []
 
 [RFC 9530, Section 3: Digest Fields]
 """
 
 RETRY_AFTER = b"Retry-After"
-"""Retry-After [permanent]
-
-
+"""Retry-After []
 
 [RFC9110, Section 10.2.3: HTTP Semantics]
 """
 
 SAFE = b"Safe"
-"""Safe [obsoleted]
+"""Safe []
 
+[RFC 2310: The Safe Response Header Field]
 
-
-[RFC 2310: The Safe Response Header Field][status-change-http-experiments-to-historic]
+[Status change of HTTP experiments to Historic]
 """
 
 SCHEDULE_REPLY = b"Schedule-Reply"
-"""Schedule-Reply [permanent]
-
-
+"""Schedule-Reply []
 
 [RFC 6638: Scheduling Extensions to CalDAV]
 """
 
 SCHEDULE_TAG = b"Schedule-Tag"
-"""Schedule-Tag [permanent]
-
-
+"""Schedule-Tag []
 
 [RFC 6338: Scheduling Extensions to CalDAV]
 """
 
 SEC_GPC = b"Sec-GPC"
-"""Sec-GPC [provisional]
-
-
+"""Sec-GPC []
 
 [Global Privacy Control (GPC)]
 """
 
 SEC_PURPOSE = b"Sec-Purpose"
-"""Sec-Purpose [permanent]
-
-
+"""Sec-Purpose []
 
 [Fetch]
+
+Intended to replace the (not registered) Purpose and x-moz headers.
 """
 
 SEC_TOKEN_BINDING = b"Sec-Token-Binding"
-"""Sec-Token-Binding [permanent]
-
-
+"""Sec-Token-Binding []
 
 [RFC 8473: Token Binding over HTTP]
 """
 
 SEC_WEBSOCKET_ACCEPT = b"Sec-WebSocket-Accept"
-"""Sec-WebSocket-Accept [permanent]
-
-
+"""Sec-WebSocket-Accept []
 
 [RFC 6455: The WebSocket Protocol]
 """
 
 SEC_WEBSOCKET_EXTENSIONS = b"Sec-WebSocket-Extensions"
-"""Sec-WebSocket-Extensions [permanent]
-
-
+"""Sec-WebSocket-Extensions []
 
 [RFC 6455: The WebSocket Protocol]
 """
 
 SEC_WEBSOCKET_KEY = b"Sec-WebSocket-Key"
-"""Sec-WebSocket-Key [permanent]
-
-
+"""Sec-WebSocket-Key []
 
 [RFC 6455: The WebSocket Protocol]
 """
 
 SEC_WEBSOCKET_PROTOCOL = b"Sec-WebSocket-Protocol"
-"""Sec-WebSocket-Protocol [permanent]
-
-
+"""Sec-WebSocket-Protocol []
 
 [RFC 6455: The WebSocket Protocol]
 """
 
 SEC_WEBSOCKET_VERSION = b"Sec-WebSocket-Version"
-"""Sec-WebSocket-Version [permanent]
-
-
+"""Sec-WebSocket-Version []
 
 [RFC 6455: The WebSocket Protocol]
 """
 
 SECURITY_SCHEME = b"Security-Scheme"
-"""Security-Scheme [obsoleted]
+"""Security-Scheme []
 
+[RFC 2660: The Secure HyperText Transfer Protocol]
 
-
-[RFC 2660: The Secure HyperText Transfer Protocol][status-change-http-experiments-to-historic]
+[Status change of HTTP experiments to Historic]
 """
 
 SERVER = b"Server"
-"""Server [permanent]
-
-
+"""Server []
 
 [RFC9110, Section 10.2.4: HTTP Semantics]
 """
 
 SERVER_TIMING = b"Server-Timing"
-"""Server-Timing [permanent]
-
-
+"""Server-Timing []
 
 [Server Timing]
 """
 
 SET_COOKIE = b"Set-Cookie"
-"""Set-Cookie [permanent]
-
-
+"""Set-Cookie []
 
 [RFC 6265: HTTP State Management Mechanism]
 """
 
 SET_COOKIE2 = b"Set-Cookie2"
-"""Set-Cookie2 [obsoleted]
+"""Set-Cookie2 []
 
+[RFC 2965: HTTP State Management Mechanism]
 
-
-[RFC 2965: HTTP State Management Mechanism][RFC 6265: HTTP State Management Mechanism]
+Obsoleted by [RFC 6265: HTTP State Management Mechanism]
 """
 
 SETPROFILE = b"SetProfile"
-"""SetProfile [obsoleted]
-
-
+"""SetProfile []
 
 [Implementation of OPS Over HTTP]
 """
 
 SIGNATURE = b"Signature"
-"""Signature [permanent]
-
-
+"""Signature []
 
 [RFC 9421, Section 4.2: HTTP Message Signatures]
 """
 
 SIGNATURE_INPUT = b"Signature-Input"
-"""Signature-Input [permanent]
-
-
+"""Signature-Input []
 
 [RFC 9421, Section 4.1: HTTP Message Signatures]
 """
 
 SLUG = b"SLUG"
-"""SLUG [permanent]
-
-
+"""SLUG []
 
 [RFC 5023: The Atom Publishing Protocol]
 """
 
 SOAPACTION = b"SoapAction"
-"""SoapAction [permanent]
-
-
+"""SoapAction []
 
 [Simple Object Access Protocol (SOAP) 1.1]
 """
 
 STATUS_URI = b"Status-URI"
-"""Status-URI [permanent]
-
-
+"""Status-URI []
 
 [RFC 2518: HTTP Extensions for Distributed Authoring -- WEBDAV]
 """
 
 STRICT_TRANSPORT_SECURITY = b"Strict-Transport-Security"
-"""Strict-Transport-Security [permanent]
-
-
+"""Strict-Transport-Security []
 
 [RFC 6797: HTTP Strict Transport Security (HSTS)]
 """
 
 SUNSET = b"Sunset"
-"""Sunset [permanent]
-
-
+"""Sunset []
 
 [RFC 8594: The Sunset HTTP Header Field]
 """
 
 SURROGATE_CAPABILITY = b"Surrogate-Capability"
-"""Surrogate-Capability [provisional]
-
-
+"""Surrogate-Capability []
 
 [Edge Architecture Specification]
 """
 
 SURROGATE_CONTROL = b"Surrogate-Control"
-"""Surrogate-Control [provisional]
-
-
+"""Surrogate-Control []
 
 [Edge Architecture Specification]
 """
 
 TCN = b"TCN"
-"""TCN [permanent]
-
-
+"""TCN []
 
 [RFC 2295: Transparent Content Negotiation in HTTP]
 """
 
 TE = b"TE"
-"""TE [permanent]
-
-
+"""TE []
 
 [RFC9110, Section 10.1.4: HTTP Semantics]
 """
 
 TIMEOUT = b"Timeout"
-"""Timeout [permanent]
-
-
+"""Timeout []
 
 [RFC 4918: HTTP Extensions for Web Distributed Authoring and Versioning (WebDAV)]
 """
 
 TIMING_ALLOW_ORIGIN = b"Timing-Allow-Origin"
-"""Timing-Allow-Origin [provisional]
-
-
+"""Timing-Allow-Origin []
 
 [Resource Timing Level 1]
 """
 
 TOPIC = b"Topic"
-"""Topic [permanent]
-
-
+"""Topic []
 
 [RFC 8030, Section 5.4: Generic Event Delivery Using HTTP Push]
 """
 
 TRACEPARENT = b"Traceparent"
-"""Traceparent [permanent]
-
-
+"""Traceparent []
 
 [Trace Context]
 """
 
 TRACESTATE = b"Tracestate"
-"""Tracestate [permanent]
-
-
+"""Tracestate []
 
 [Trace Context]
 """
 
 TRAILER = b"Trailer"
-"""Trailer [permanent]
-
-
+"""Trailer []
 
 [RFC9110, Section 6.6.2: HTTP Semantics]
 """
 
 TRANSFER_ENCODING = b"Transfer-Encoding"
-"""Transfer-Encoding [permanent]
-
-
+"""Transfer-Encoding []
 
 [RFC9112, Section 6.1: HTTP Semantics]
 """
 
 TTL = b"TTL"
-"""TTL [permanent]
-
-
+"""TTL []
 
 [RFC 8030, Section 5.2: Generic Event Delivery Using HTTP Push]
 """
 
 UPGRADE = b"Upgrade"
-"""Upgrade [permanent]
-
-
+"""Upgrade []
 
 [RFC9110, Section 7.8: HTTP Semantics]
 """
 
 URGENCY = b"Urgency"
-"""Urgency [permanent]
-
-
+"""Urgency []
 
 [RFC 8030, Section 5.3: Generic Event Delivery Using HTTP Push]
 """
 
 URI = b"URI"
-"""URI [obsoleted]
-
-
+"""URI []
 
 [RFC 2068: Hypertext Transfer Protocol -- HTTP/1.1]
 """
 
 USER_AGENT = b"User-Agent"
-"""User-Agent [permanent]
-
-
+"""User-Agent []
 
 [RFC9110, Section 10.1.5: HTTP Semantics]
 """
 
 VARIANT_VARY = b"Variant-Vary"
-"""Variant-Vary [permanent]
-
-
+"""Variant-Vary []
 
 [RFC 2295: Transparent Content Negotiation in HTTP]
 """
 
 VARY = b"Vary"
-"""Vary [permanent]
-
-
+"""Vary []
 
 [RFC9110, Section 12.5.5: HTTP Semantics]
 """
 
 VIA = b"Via"
-"""Via [permanent]
-
-
+"""Via []
 
 [RFC9110, Section 7.6.3: HTTP Semantics]
 """
 
 WANT_CONTENT_DIGEST = b"Want-Content-Digest"
-"""Want-Content-Digest [permanent]
-
-
+"""Want-Content-Digest []
 
 [RFC 9530, Section 4: Digest Fields]
 """
 
 WANT_DIGEST = b"Want-Digest"
-"""Want-Digest [obsoleted]
+"""Want-Digest []
 
+[RFC 3230: Instance Digests in HTTP]
 
-
-[RFC 3230: Instance Digests in HTTP][RFC 9530, Section 1.3: Digest Fields]
+Obsoleted by [RFC 9530, Section 1.3: Digest Fields]
 """
 
 WANT_REPR_DIGEST = b"Want-Repr-Digest"
-"""Want-Repr-Digest [permanent]
-
-
+"""Want-Repr-Digest []
 
 [RFC 9530, Section 4: Digest Fields]
 """
 
 WARNING = b"Warning"
-"""Warning [obsoleted]
-
-
+"""Warning []
 
 [RFC9111, Section 5.5: HTTP Caching]
 """
 
 WWW_AUTHENTICATE = b"WWW-Authenticate"
-"""WWW-Authenticate [permanent]
-
-
+"""WWW-Authenticate []
 
 [RFC9110, Section 11.6.1: HTTP Semantics]
 """
 
 X_CONTENT_TYPE_OPTIONS = b"X-Content-Type-Options"
-"""X-Content-Type-Options [permanent]
-
-
+"""X-Content-Type-Options []
 
 [Fetch]
 """
 
 X_FRAME_OPTIONS = b"X-Frame-Options"
-"""X-Frame-Options [permanent]
-
-
+"""X-Frame-Options []
 
 [HTML]
 """
 
 STAR = b"*"
-"""* [permanent]
-
-
+"""* []
 
 [RFC9110, Section 12.5.5: HTTP Semantics]
+
+(reserved)
 """
