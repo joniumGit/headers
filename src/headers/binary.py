@@ -201,6 +201,12 @@ AUTHORIZATION = b"Authorization"
 [RFC9110, Section 11.6.2: HTTP Semantics]
 """
 
+AVAILABLE_DICTIONARY = b"Available-Dictionary"
+"""Available-Dictionary []
+
+[RFC-ietf-httpbis-compression-dictionary-19, Section 2.2: Compression Dictionary Transport]
+"""
+
 C_EXT = b"C-Ext"
 """C-Ext []
 
@@ -573,6 +579,12 @@ DIFFERENTIAL_ID = b"Differential-ID"
 """Differential-ID []
 
 [The HTTP Distribution and Replication Protocol]
+"""
+
+DICTIONARY_ID = b"Dictionary-ID"
+"""Dictionary-ID []
+
+[RFC-ietf-httpbis-compression-dictionary-19, Section 2.3: Compression Dictionary Transport]
 """
 
 DIGEST = b"Digest"
@@ -1399,6 +1411,12 @@ URI = b"URI"
 """URI []
 
 [RFC 2068: Hypertext Transfer Protocol -- HTTP/1.1]
+"""
+
+USE_AS_DICTIONARY = b"Use-As-Dictionary"
+"""Use-As-Dictionary []
+
+[RFC-ietf-httpbis-compression-dictionary-19, Section 2.1: Compression Dictionary Transport]
 """
 
 USER_AGENT = b"User-Agent"
