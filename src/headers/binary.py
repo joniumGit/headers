@@ -310,13 +310,13 @@ CLEAR_SITE_DATA = b"Clear-Site-Data"
 """
 
 CLIENT_CERT = b"Client-Cert"
-"""Client-Cert []
+"""Client-Cert [Item]
 
 [RFC9440, Section 2: Client-Cert HTTP Header Field]
 """
 
 CLIENT_CERT_CHAIN = b"Client-Cert-Chain"
-"""Client-Cert-Chain []
+"""Client-Cert-Chain [List]
 
 [RFC9440, Section 2: Client-Cert HTTP Header Field]
 """
@@ -363,6 +363,12 @@ CMSD_STATIC = b"CMSD-Static"
 """CMSD-Static []
 
 [CTA][CTA-5006 Common Media Server Data (CMSD)]
+"""
+
+CONCEALED_AUTH_EXPORT = b"Concealed-Auth-Export"
+"""Concealed-Auth-Export [Item]
+
+[RFC-ietf-httpbis-unprompted-auth-12: The Concealed HTTP Authentication Scheme]
 """
 
 CONFIGURATION_CONTEXT = b"Configuration-Context"
@@ -555,6 +561,12 @@ DELTA_BASE = b"Delta-Base"
 """Delta-Base []
 
 [RFC 3229: Delta encoding in HTTP]
+"""
+
+DEPRECATION = b"Deprecation"
+"""Deprecation [Item]
+
+[RFC-ietf-httpapi-deprecation-header-09, Section 2: The Deprecation HTTP Response Header Field]
 """
 
 DEPTH = b"Depth"
@@ -784,7 +796,7 @@ LINK = b"Link"
 LINK_TEMPLATE = b"Link-Template"
 """Link-Template []
 
-[RFC-ietf-httpapi-link-template-04: The Link-Template HTTP Header Field]
+[RFC 9652: The Link-Template HTTP Header Field]
 """
 
 LOCATION = b"Location"
